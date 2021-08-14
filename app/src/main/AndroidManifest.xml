@@ -12,6 +12,7 @@
         <activity android:name=".PlantDetails"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".Lights"></activity>
+        <activity android:name=".Furniture"></activity>
         <activity android:name=".Dashboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

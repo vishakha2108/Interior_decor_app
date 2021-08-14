@@ -8,88 +8,76 @@
 
     <RadioGroup
         android:id="@+id/RadioGroup"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="288dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="@id/textView">
 
+        <RadioButton
+            android:id="@+id/airPurifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air purifiers"
+            app:layout_constraintBottom_toTopOf="@+id/allergyRelief"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/RadioGroup" />
+
+        <RadioButton
+            android:id="@+id/allergyRelief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergy Relief"
+            app:layout_constraintBottom_toTopOf="@+id/happyBlooms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/airPurifier" />
+
+        <RadioButton
+            android:id="@+id/happyBlooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Happy blooms"
+            app:layout_constraintBottom_toBottomOf="@id/RadioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/allergyRelief" />
     </RadioGroup>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="128dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="140dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Get list"
         app:backgroundTint="#4CAF50"
-        app:layout_constraintBottom_toTopOf="@+id/RadioGroup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.01"
-        app:layout_constraintStart_toStartOf="@+id/happyBlooms"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <RadioButton
-        android:id="@+id/airPurifier"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:layout_marginBottom="9dp"
-        android:text="Air purifiers"
-        app:layout_constraintBottom_toTopOf="@+id/allergyRelief"
+        app:layout_constraintTop_toBottomOf="@id/RadioGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/imageView2" />
 
-    <RadioButton
-        android:id="@+id/allergyRelief"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
-        android:layout_marginBottom="13dp"
-        android:text="Allergy Relief"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/happyBlooms"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/airPurifier" />
 
-    <RadioButton
-        android:id="@+id/happyBlooms"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="34dp"
-        android:text="Happy blooms"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/allergyRelief" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginBottom="44dp"
-        android:text="Please select a category of indoor plants"
+        android:layout_marginTop="50dp"
+        android:text="@string/please_select_a_category_of_indoor_plants"
         android:textColor="#4CAF50"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/airPurifier"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="383dp"
-        android:layout_height="368dp"
+        android:layout_width="372dp"
+        android:layout_height="372dp"
         android:layout_marginStart="14dp"
         android:layout_marginEnd="14dp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="please_select_a_category_of_indoor_plants">Please select a category of indoor plants</string>
+    <string name="enter">Enter</string>
+    <string name="enter_text_here">Enter text here</string>
 </resources>
